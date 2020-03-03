@@ -137,7 +137,7 @@ html {
 }
 html,
 body {
-  font-family: plain;
+  font-family: 'Oxanium';
 }
 h2,
 h3,
@@ -167,8 +167,44 @@ img {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
+}
+body {
   background-color: #3F3957;
 }
-.body {
-  background-color: #3F3957;
+.choose {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  border: 1px solid #F62E03;
+}
+.choose h1 {
+  justify-content: center;
+  padding-left: 5.4em;
+  padding-bottom: 1em;
+}
+.choose .choices {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.choose .needassist {
+  display: flexbox;
+  align-items: center;
+}
+.choose button {
+  background-color: #F62E03;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.choose button:hover {
+  background-color: lightblue;
+  color: #3F3957;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
