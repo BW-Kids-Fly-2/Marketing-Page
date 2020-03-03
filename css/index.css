@@ -176,13 +176,13 @@ img {
 }
 .navbar nav {
   position: fixed;
-  background-color: whitesmoke;
+  background-color: #3F3957;
 }
 .navbar nav a {
   text-decoration: none;
   flex-wrap: nowrap;
   font-size: 30px;
-  color: #3F3957;
+  color: whitesmoke;
   padding-left: 1em;
   padding-bottom: 1em;
 }
@@ -223,6 +223,34 @@ body {
   display: flex;
   justify-content: space-around;
 }
+.joinSignIn {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+}
+.joinSignIn button {
+  background-color: #F62E03;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.joinSignIn button:hover {
+  background-color: lightblue;
+  color: #3F3957;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.joinSignIn a {
+  text-decoration: none;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  color: white;
+}
 .choose {
   display: flex;
   flex-direction: column;
@@ -239,20 +267,26 @@ body {
 }
 .choose .choices {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: space-between;
 }
 .choose .needassist {
   display: flexbox;
-  align-items: center;
-  padding-top: 1em;
-  padding-right: 9em;
+  justify-content: space-between;
+  padding: 4%;
+  width: 80%;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 20%;
 }
 .choose .assist {
   display: flexbox;
   align-items: center;
-  padding-top: 1em;
-  padding-left: 9em;
+  padding: 4%;
+  width: 80%;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 20%;
 }
 .choose button {
   background-color: #F62E03;
