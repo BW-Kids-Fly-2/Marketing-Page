@@ -128,9 +128,8 @@ table {
 }
 * {
   box-sizing: border-box;
-  padding: 0 6%;
-  margin: 0 6%;
-  max-width: 100%;
+  padding: 0 8%;
+  margin: 0 20%;
 }
 html {
   font-size: 62.5%;
@@ -169,22 +168,46 @@ img {
   padding: 0 9%;
 }
 .navbar {
-  display: flex;
-  justify-content: space-around;
   top: 0;
-  width: 100%;
+  min-width: 100%;
+  position: fixed;
 }
 .navbar nav {
-  position: fixed;
+  display: inline;
   background-color: #3F3957;
 }
 .navbar nav a {
   text-decoration: none;
-  flex-wrap: nowrap;
   font-size: 30px;
   color: whitesmoke;
-  padding-left: 1em;
+  padding-left: 3%;
   padding-bottom: 1em;
+}
+.joinSignIn {
+  display: flex;
+  justify-content: center;
+}
+.joinSignIn button {
+  background-color: #F62E03;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.joinSignIn button:hover {
+  background-color: lightblue;
+  color: #3F3957;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.joinSignIn a {
+  text-decoration: none;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  color: white;
 }
 .navbarB {
   display: flex;
@@ -222,34 +245,6 @@ body {
 .mainSect .partTwo {
   display: flex;
   justify-content: space-around;
-}
-.joinSignIn {
-  display: flex;
-  justify-content: flex-end;
-  align-content: center;
-  align-items: center;
-}
-.joinSignIn button {
-  background-color: #F62E03;
-  border: none;
-  border-radius: 10%;
-  color: white;
-  padding: 5px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-.joinSignIn button:hover {
-  background-color: lightblue;
-  color: #3F3957;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.joinSignIn a {
-  text-decoration: none;
-  flex-wrap: nowrap;
-  font-size: 20px;
-  color: white;
 }
 .choose {
   display: flex;
