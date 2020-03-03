@@ -169,16 +169,17 @@ img {
 }
 .navbar {
   top: 0;
-  min-width: 100%;
-  position: fixed;
+  min-width: 82%;
+  position: sticky;
+  overflow: hidden;
+  z-index: 1000;
 }
 .navbar nav {
-  display: inline;
   background-color: #3F3957;
 }
 .navbar nav a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   color: whitesmoke;
   padding-left: 3%;
   padding-bottom: 1em;
@@ -186,6 +187,8 @@ img {
 .joinSignIn {
   display: flex;
   justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 .joinSignIn button {
   background-color: #F62E03;

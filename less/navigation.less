@@ -1,10 +1,11 @@
 .navbar{
     top:0;
-    min-width: 100%; 
-    position: fixed;
-    // overflow: hidden;
+    min-width: 82%; 
+    position: sticky;
+    overflow: hidden;
+    z-index: 1000;
     nav{
-      display: inline; 
+      
         background-color: @background-color;
     
 
@@ -12,7 +13,7 @@
         a{
    
         text-decoration: none;
-        font-size: 30px;
+        font-size: 20px;
         color:whitesmoke;
         padding-left:3%;
         padding-bottom: 1em;
@@ -26,8 +27,8 @@
 .joinSignIn{
     display: flex;
     justify-content: center;
-//     align-content: center;
-//    align-items: center;
+    align-content: center;
+   align-items: center;
    button{
        .custBtn();
 
