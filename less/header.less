@@ -1,4 +1,22 @@
+.joinSignIn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+   align-items: center;
+   padding-left: 55em;
+   button{
+       .custBtn();
 
+   }
+  
+    a{
+        text-decoration: none;
+        flex-wrap: nowrap;
+        font-size: 20px;
+        color: white;
+          
+    }
+}//ends joinSignIn
 
 
 .choose{
@@ -6,16 +24,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 4px dotted @accent-color;
+    // border: 4px solid @accent-color;
     padding:4%; 
     padding-top: 8em; 
     background-color: @background-color;    
     
     h1{
-      padding-bottom: 1em;
+      padding-bottom: .7em;
       color:white;
-      
+      font-size: 8rem;
 
+    }
+
+    h2{
+        color: @accent-color;
     }
     .choices{
         display: flex;
