@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: circle;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  padding: 0 8%;
+  margin: 0 20%;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Oxanium', cursive;
+}
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Odibee Sans', cursive;
+}
+h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+  font-family: 'Oxanium', cursive;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 9%;
+}
+.navbar {
+  top: 0;
+  min-width: 100%;
+  position: fixed;
+}
+.navbar nav {
+  display: inline;
+  background-color: #3F3957;
+}
+.navbar nav a {
+  text-decoration: none;
+  font-size: 30px;
+  color: whitesmoke;
+  padding-left: 3%;
+  padding-bottom: 1em;
+}
+.joinSignIn {
+  display: flex;
+  justify-content: center;
+}
+.joinSignIn button {
+  background-color: #F62E03;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.joinSignIn button:hover {
+  background-color: lightblue;
+  color: #3F3957;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.joinSignIn a {
+  text-decoration: none;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  color: white;
+}
+.navbarB {
+  display: flex;
+  justify-content: space-around;
+}
+.navbarB nav a {
+  text-decoration: none;
+  flex-wrap: nowrap;
+  font-size: 30px;
+  color: white;
+  padding-left: 1em;
+}
+body {
+  background-color: #3F3957;
+}
+.container {
+  background-image: url(..//images/heroImg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.mainSect {
+  background-color: #3F3957;
+}
+.mainSect h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+}
+.mainSect .partOne {
+  display: flex;
+  justify-content: space-around;
+}
+.mainSect .partTwo {
+  display: flex;
+  justify-content: space-around;
+}
+.choose {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px dotted #F62E03;
+  padding: 4%;
+  padding-top: 8em;
+  background-color: #3F3957;
+}
+.choose h1 {
+  padding-bottom: 1em;
+  color: white;
+}
+.choose .choices {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+}
+.choose .needassist {
+  display: flexbox;
+  justify-content: space-between;
+  padding: 4%;
+  width: 80%;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 20%;
+}
+.choose .assist {
+  display: flexbox;
+  align-items: center;
+  padding: 4%;
+  width: 80%;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 20%;
+}
+.choose button {
+  background-color: #F62E03;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.choose button:hover {
+  background-color: lightblue;
+  color: #3F3957;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
