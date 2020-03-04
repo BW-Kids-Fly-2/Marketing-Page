@@ -551,7 +551,6 @@ footer {
 }
 .joinSignIn a {
   text-decoration: none;
-  flex-wrap: nowrap;
   font-size: 20px;
   color: white;
 }
@@ -568,6 +567,7 @@ footer {
 @media (max-width: 500px) {
   .joinSignIn a {
     padding-right: 30rem;
+    font-size: 15px;
   }
 }
 .choose {
@@ -643,4 +643,85 @@ footer {
   background-color: lightblue;
   color: rgba(63, 57, 87, 0.8);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.joinSignInAbout {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-left: 45em;
+}
+@media (max-width: 1300px) {
+  .joinSignInAbout {
+    padding-left: 38em;
+  }
+}
+@media (max-width: 800px) {
+  .joinSignInAbout {
+    padding-left: 28em;
+  }
+}
+@media (max-width: 500px) {
+  .joinSignInAbout {
+    padding-left: 20em;
+  }
+}
+.joinSignInAbout button {
+  background-color: #D82748;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 8px;
+}
+.joinSignInAbout button:hover {
+  background-color: lightblue;
+  color: rgba(63, 57, 87, 0.8);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 500px) {
+  .joinSignInAbout button {
+    margin-right: 20px;
+  }
+}
+.joinSignInAbout a {
+  text-decoration: none;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  color: #D82748;
+}
+@media (max-width: 500px) {
+  .joinSignInAbout a {
+    font-size: 18px;
+  }
+}
+.aboutInfo {
+  background-color: rgba(63, 57, 87, 0.8);
+  text-align: center;
+}
+.aboutInfo h1,
+.aboutInfo h2 {
+  color: whitesmoke;
+}
+.aboutInfo p {
+  color: whitesmoke;
+}
+@media (max-width: 800px) {
+  .aboutInfo h1 {
+    font-size: 2rem;
+  }
+  .aboutInfo p {
+    font-size: 15px;
+  }
+}
+.contactUs {
+  background-color: rgba(127, 117, 161, 0.5);
+  text-align: center;
+}
+.contactUs a {
+  text-decoration: none;
+  color: #1f183d;
 }
