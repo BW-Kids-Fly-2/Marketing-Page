@@ -173,7 +173,6 @@ img {
   min-width: 82%;
   position: sticky;
   overflow: hidden;
-  z-index: 100;
 }
 .navbar nav {
   display: flex;
@@ -190,6 +189,9 @@ img {
 .navbarB {
   display: flex;
   justify-content: space-around;
+  padding-top: 1em;
+  border-top: 2px dashed whitesmoke;
+  padding-bottom: 2em;
 }
 .navbarB nav a {
   text-decoration: none;
@@ -198,96 +200,142 @@ img {
   color: white;
   padding-left: 1em;
 }
+footer {
+  text-align: center;
+}
 .container {
-  background-image: url(../images/kenrick-mills-MF9Wy1NA55I-unsplash.jpg);
+  background-image: url(../images/heroImg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.mainSect .howItWorks h2 {
+@media (max-width: 1300px) {
+  .container {
+    background-image: none;
+    background-color: rgba(63, 57, 87, 0.8);
+  }
+}
+.container .mainSect .howItWorks h2 {
   color: white;
   padding-top: 1em;
   font-size: 14rem;
   text-align: center;
 }
-.mainSect .howItWorks .topHowItWorks {
+@media (max-width: 1300px) {
+  .container .mainSect .howItWorks h2 {
+    color: rgba(63, 57, 87, 0.8);
+    font-size: 10rem;
+  }
+}
+.container .mainSect .howItWorks .topHowItWorks {
   display: flex;
   justify-content: space-between;
 }
-.mainSect .howItWorks .topHowItWorks .signUpBox {
+.container .mainSect .howItWorks .topHowItWorks .signUpBox {
   width: 47%;
   background-image: url(../images/signUp.jpg);
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
 }
-.mainSect .howItWorks .topHowItWorks .signUpBox h3 {
+@media (max-width: 1300px) {
+  .container .mainSect .howItWorks .topHowItWorks .signUpBox {
+    background-image: none;
+  }
+}
+.container .mainSect .howItWorks .topHowItWorks .signUpBox h3 {
   text-align: center;
   font-size: 5rem;
   color: #D82748;
 }
-.mainSect .howItWorks .topHowItWorks .signUpBox p {
+.container .mainSect .howItWorks .topHowItWorks p {
   color: rbg(63, 57, 87);
-  background-color: rgba(145, 111, 111, 0.5);
+  background-color: rgba(145, 111, 111, 0.3);
   border-radius: 9%;
   padding: 2%;
 }
-.mainSect .howItWorks .topHowItWorks .planTrip {
+.container .mainSect .howItWorks .planTrip {
   width: 47%;
   background-image: url(../images/PlanTripimg.jpg);
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
 }
-.mainSect .howItWorks .topHowItWorks .planTrip h3 {
+@media (max-width: 1300px) {
+  .container .mainSect .howItWorks .planTrip {
+    background-image: none;
+  }
+}
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks .planTrip {
+    background-image: none;
+  }
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .planTrip {
+    background-image: none;
+  }
+}
+.container .mainSect .howItWorks .planTrip h3 {
   text-align: center;
   font-size: 5rem;
   color: #D82748;
 }
-.mainSect .howItWorks .topHowItWorks .planTrip p {
+.container .mainSect .howItWorks .planTrip p {
   color: rbg(63, 57, 87);
-  background-color: rgba(145, 111, 111, 0.5);
+  background-color: rgba(145, 111, 111, 0.3);
   border-radius: 9%;
   padding: 2%;
 }
-.mainSect .howItWorks .bottomHowItWorks {
+.container .mainSect .bottomHowItWorks {
   display: flex;
   justify-content: space-between;
   padding-top: 2em;
+  padding-bottom: 2em;
 }
-.mainSect .howItWorks .bottomHowItWorks .chooseAssist {
+.container .mainSect .bottomHowItWorks .chooseAssist {
   width: 47%;
   background-image: url(../images/searchPerson.jpg);
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
 }
-.mainSect .howItWorks .bottomHowItWorks .chooseAssist h3 {
+@media (max-width: 1300px) {
+  .container .mainSect .bottomHowItWorks .chooseAssist {
+    background-image: none;
+  }
+}
+.container .mainSect .bottomHowItWorks .chooseAssist h3 {
   text-align: center;
   font-size: 5rem;
   color: #D82748;
 }
-.mainSect .howItWorks .bottomHowItWorks .chooseAssist p {
+.container .mainSect .bottomHowItWorks .chooseAssist p {
   color: rbg(63, 57, 87);
-  background-color: rgba(145, 111, 111, 0.5);
+  background-color: rgba(145, 111, 111, 0.3);
   border-radius: 9%;
   padding: 2%;
 }
-.mainSect .howItWorks .bottomHowItWorks .relax {
+.container .mainSect .bottomHowItWorks .relax {
   width: 47%;
   background-image: url(../images/relax.jpg);
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
 }
-.mainSect .howItWorks .bottomHowItWorks .relax h3 {
+@media (max-width: 1300px) {
+  .container .mainSect .bottomHowItWorks .relax {
+    background-image: none;
+  }
+}
+.container .mainSect .bottomHowItWorks .relax h3 {
   text-align: center;
   font-size: 5rem;
   color: #D82748;
 }
-.mainSect .howItWorks .bottomHowItWorks .relax p {
+.container .mainSect .bottomHowItWorks .relax p {
   color: rbg(63, 57, 87);
-  background-color: rgba(145, 111, 111, 0.5);
+  background-color: rgba(145, 111, 111, 0.3);
   border-radius: 9%;
   padding: 2%;
 }
@@ -296,7 +344,23 @@ img {
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding-left: 55em;
+  padding-left: 45em;
+}
+@media (max-width: 1300px) {
+  .joinSignIn {
+    padding-right: 20em;
+    padding-bottom: 2em;
+  }
+}
+@media (max-width: 800px) {
+  .joinSignIn {
+    padding-right: 23em;
+  }
+}
+@media (max-width: 500px) {
+  .joinSignIn {
+    padding-right: 30rem;
+  }
 }
 .joinSignIn button {
   background-color: #D82748;
@@ -319,6 +383,21 @@ img {
   font-size: 20px;
   color: white;
 }
+@media (max-width: 1300px) {
+  .joinSignIn a {
+    padding-right: 20em;
+  }
+}
+@media (max-width: 800px) {
+  .joinSignIn a {
+    padding-right: 23em;
+  }
+}
+@media (max-width: 500px) {
+  .joinSignIn a {
+    padding-right: 30rem;
+  }
+}
 .choose {
   display: flex;
   flex-direction: column;
@@ -337,6 +416,21 @@ img {
   color: white;
   font-size: 8rem;
 }
+@media (max-width: 1300px) {
+  .choose h1 {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 800px) {
+  .choose h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .choose h1 {
+    font-size: 4rem;
+  }
+}
 .choose h2 {
   color: white;
   font-size: 4rem;
@@ -344,22 +438,21 @@ img {
 .choose .choices {
   display: flex;
   justify-content: space-between;
-  align-items: space-between;
 }
-.choose .needassist {
+.choose .choices .needassist {
   display: flexbox;
   justify-content: space-between;
   padding: 6%;
-  width: 80%;
+  width: 45%;
   color: whitesmoke;
   border: 1px solid whitesmoke;
   border-radius: 20%;
 }
-.choose .assist {
+.choose .choices .assist {
   display: flexbox;
   align-items: center;
   padding: 4%;
-  width: 80%;
+  width: 45%;
   color: whitesmoke;
   border: 1px solid whitesmoke;
   border-radius: 20%;
