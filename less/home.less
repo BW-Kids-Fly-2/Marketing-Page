@@ -1,43 +1,5 @@
-
-.mainSect{
-    background-color: @background-color;
-    //  filter:blur(10px);
-    // -webkit-filter: blur(7px);
-    // z-index: -800;
-
-   
-   h2{
-        color:white;
-        display: flex;
-        justify-content: center;
-        padding-top: 1em;
-    }
-   
-
-    .partOne{
-        display:flex;
-        justify-content: space-around;
-    
-    }//ends partOne
-
-    .partTwo{
-        display:flex;
-        justify-content: space-around;
-     
-    }//ends partTwo
-
-    .howItWorks{
-        h2{
-            font-size: 10rem;
-        }
-
-    }
-}// ends mainSect
 .container{
-    background-image: url(..//images/heroImg.jpg);
-    // filter:blur(10px);
-    // -webkit-filter: blur(7px);
-    // z-index: -800;
+    background-image: url(../images/kenrick-mills-MF9Wy1NA55I-unsplash.jpg);   
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -45,4 +7,137 @@
    
 
 
+}
+.mainSect{
+    // background-color: @background-color;
+    //  filter:blur(10px);
+    // -webkit-filter: blur(7px);
+    // z-index: -800;
+
+   
+  
+   
+
+    .howItWorks{
+        h2{
+        color:white;
+        // display: flex;
+        // justify-content: row;
+        padding-top: 1em;
+        font-size: 14rem;
+        text-align: center;
+    }//ends h2
+    .topHowItWorks{
+        display: flex;
+        justify-content: space-between;
+        .signUpBox{
+            width:47%;
+            background-image: url(../images/signUp.jpg);
+            border-radius: 9%;
+            background-size: cover;
+            padding:2%;
+
+            h3{
+                text-align: center;
+                font-size: 5rem;
+                color: @accent-color;
+            }
+            p{
+                color: rbg(63, 57, 87);
+                background-color: rgba(145, 111, 111, 0.5);
+                border-radius: 9%;
+                padding:2%;
+            }
+
+
+        }//ends signUpBox
+
+        .planTrip{
+            width:47%;
+            background-image: url(../images/PlanTripimg.jpg);
+          
+            border-radius: 9%;
+            background-size: cover;
+            padding:2%;
+
+            h3{
+                text-align: center;
+                font-size: 5rem;
+                color: @accent-color;
+                
+            }
+            p{
+                color: rbg(63, 57, 87);
+                background-color: rgba(145, 111, 111, 0.5);
+                border-radius: 9%;
+                padding:2%;
+              
+            }
+
+
+        }//ends planTrip
+    }//ends topHowItWorks
+
+    .bottomHowItWorks{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2em;
+        .chooseAssist{
+            width:47%;
+            background-image: url(../images/searchPerson.jpg);
+          
+            border-radius: 9%;
+            background-size: cover;
+            padding:2%;
+
+            h3{
+                text-align: center;
+                font-size: 5rem;
+                color: @accent-color;
+                
+            }
+            p{
+                color: rbg(63, 57, 87);
+                background-color: rgba(145, 111, 111, 0.5);
+                border-radius: 9%;
+                padding:2%;
+              
+            }//ends choose assistant
+
+
+        }//ends chooseAssist
+
+        .relax{
+           
+                width:47%;
+                background-image: url(../images/relax.jpg);
+              
+                border-radius: 9%;
+                background-size: cover;
+                padding:2%;
+    
+                h3{
+                    text-align: center;
+                    font-size: 5rem;
+                    color: @accent-color;
+                    
+                }
+                p{
+                    color: rbg(63, 57, 87);
+                    background-color: rgba(145, 111, 111, 0.5);
+                    border-radius: 9%;
+                    padding:2%;
+                  
+                
+            
+    
+    
+            
+        }//ends relax
+
+    } //ends bottomHowItWorks
+
+
+    }
+}// ends mainSect
 }

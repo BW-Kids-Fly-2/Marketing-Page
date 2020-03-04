@@ -129,7 +129,7 @@ table {
 * {
   box-sizing: border-box;
   padding: 0 8%;
-  margin: 0 20%;
+  margin: 0 30%;
 }
 html {
   font-size: 62.5%;
@@ -178,7 +178,7 @@ img {
 .navbar nav {
   display: flex;
   justify-content: space-around;
-  background-color: #3F3957;
+  background-color: rgba(63, 57, 87, 0.8);
 }
 .navbar nav a {
   text-decoration: none;
@@ -198,31 +198,98 @@ img {
   color: white;
   padding-left: 1em;
 }
-.mainSect {
-  background-color: #3F3957;
-}
-.mainSect h2 {
-  color: white;
-  display: flex;
-  justify-content: center;
-  padding-top: 1em;
-}
-.mainSect .partOne {
-  display: flex;
-  justify-content: space-around;
-}
-.mainSect .partTwo {
-  display: flex;
-  justify-content: space-around;
-}
-.mainSect .howItWorks h2 {
-  font-size: 10rem;
-}
 .container {
-  background-image: url(..//images/heroImg.jpg);
+  background-image: url(../images/kenrick-mills-MF9Wy1NA55I-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+.mainSect .howItWorks h2 {
+  color: white;
+  padding-top: 1em;
+  font-size: 14rem;
+  text-align: center;
+}
+.mainSect .howItWorks .topHowItWorks {
+  display: flex;
+  justify-content: space-between;
+}
+.mainSect .howItWorks .topHowItWorks .signUpBox {
+  width: 47%;
+  background-image: url(../images/signUp.jpg);
+  border-radius: 9%;
+  background-size: cover;
+  padding: 2%;
+}
+.mainSect .howItWorks .topHowItWorks .signUpBox h3 {
+  text-align: center;
+  font-size: 5rem;
+  color: #D82748;
+}
+.mainSect .howItWorks .topHowItWorks .signUpBox p {
+  color: rbg(63, 57, 87);
+  background-color: rgba(145, 111, 111, 0.5);
+  border-radius: 9%;
+  padding: 2%;
+}
+.mainSect .howItWorks .topHowItWorks .planTrip {
+  width: 47%;
+  background-image: url(../images/PlanTripimg.jpg);
+  border-radius: 9%;
+  background-size: cover;
+  padding: 2%;
+}
+.mainSect .howItWorks .topHowItWorks .planTrip h3 {
+  text-align: center;
+  font-size: 5rem;
+  color: #D82748;
+}
+.mainSect .howItWorks .topHowItWorks .planTrip p {
+  color: rbg(63, 57, 87);
+  background-color: rgba(145, 111, 111, 0.5);
+  border-radius: 9%;
+  padding: 2%;
+}
+.mainSect .howItWorks .bottomHowItWorks {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+.mainSect .howItWorks .bottomHowItWorks .chooseAssist {
+  width: 47%;
+  background-image: url(../images/searchPerson.jpg);
+  border-radius: 9%;
+  background-size: cover;
+  padding: 2%;
+}
+.mainSect .howItWorks .bottomHowItWorks .chooseAssist h3 {
+  text-align: center;
+  font-size: 5rem;
+  color: #D82748;
+}
+.mainSect .howItWorks .bottomHowItWorks .chooseAssist p {
+  color: rbg(63, 57, 87);
+  background-color: rgba(145, 111, 111, 0.5);
+  border-radius: 9%;
+  padding: 2%;
+}
+.mainSect .howItWorks .bottomHowItWorks .relax {
+  width: 47%;
+  background-image: url(../images/relax.jpg);
+  border-radius: 9%;
+  background-size: cover;
+  padding: 2%;
+}
+.mainSect .howItWorks .bottomHowItWorks .relax h3 {
+  text-align: center;
+  font-size: 5rem;
+  color: #D82748;
+}
+.mainSect .howItWorks .bottomHowItWorks .relax p {
+  color: rbg(63, 57, 87);
+  background-color: rgba(145, 111, 111, 0.5);
+  border-radius: 9%;
+  padding: 2%;
 }
 .joinSignIn {
   display: flex;
@@ -243,7 +310,7 @@ img {
 }
 .joinSignIn button:hover {
   background-color: lightblue;
-  color: #3F3957;
+  color: rgba(63, 57, 87, 0.8);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .joinSignIn a {
@@ -259,7 +326,11 @@ img {
   align-items: center;
   padding: 4%;
   padding-top: 8em;
-  background-color: #3F3957;
+  background-color: rgba(63, 57, 87, 0.8);
+}
+.choose .logo {
+  padding-bottom: 2em;
+  padding-right: 2.5em;
 }
 .choose h1 {
   padding-bottom: 0.7em;
@@ -267,7 +338,8 @@ img {
   font-size: 8rem;
 }
 .choose h2 {
-  color: #D82748;
+  color: white;
+  font-size: 4rem;
 }
 .choose .choices {
   display: flex;
@@ -277,7 +349,7 @@ img {
 .choose .needassist {
   display: flexbox;
   justify-content: space-between;
-  padding: 4%;
+  padding: 6%;
   width: 80%;
   color: whitesmoke;
   border: 1px solid whitesmoke;
@@ -304,6 +376,6 @@ img {
 }
 .choose button:hover {
   background-color: lightblue;
-  color: #3F3957;
+  color: rgba(63, 57, 87, 0.8);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
