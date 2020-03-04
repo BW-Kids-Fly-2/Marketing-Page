@@ -516,6 +516,7 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   padding-left: 45em;
 }
 @media (max-width: 1300px) {
@@ -531,7 +532,7 @@ footer {
 }
 @media (max-width: 500px) {
   .joinSignIn {
-    padding-right: 30rem;
+    padding-right: 25rem;
   }
 }
 .joinSignIn button {
