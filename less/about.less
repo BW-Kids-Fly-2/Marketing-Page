@@ -1,0 +1,70 @@
+.joinSignInAbout{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+   align-items: center;
+   padding-left: 45em;
+   @media @smallComputers{
+       padding-left: 38em;
+   }
+   @media @tablet{
+       padding-left: 28em;
+   }
+   @media @phone{
+       padding-left: 20em;
+       
+   }
+
+
+   button{
+       .custBtn();
+       margin-right: 8px;
+       @media @phone{
+           margin-right:20px;
+       }
+   
+
+   }
+  
+    a{
+        text-decoration: none;
+        flex-wrap: nowrap;
+        font-size: 20px;
+        color: @accent-color;
+        @media @phone{
+            font-size: 18px;
+        }
+
+    }
+}//ends joinSignIn
+
+.aboutInfo{
+    background-color: @background-color;
+    text-align: center;
+    h1, h2{
+        color:whitesmoke;
+    }
+    p{
+        color:whitesmoke;
+        
+      
+    }
+
+    @media @tablet{
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+
+}
+.contactUs{
+    background-color: rgba(127, 117, 161, 0.5);
+    text-align: center;
+    a{
+    text-decoration: none;
+    color:rgb(31, 24, 61) ;
+    }
+}

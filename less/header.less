@@ -1,4 +1,47 @@
+.joinSignIn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+   align-items: center;
+   padding-left: 45em;
 
+   @media @smallComputers{
+       padding-right: 20em;
+       padding-bottom: 2em;
+   }
+   @media @tablet {
+    padding-right: 23em;
+   }
+   @media @phone{
+       padding-right: 30rem;
+   }
+
+ 
+
+   button{
+       .custBtn();
+   
+
+   }
+  
+    a{
+        text-decoration: none;
+        // flex-wrap: nowrap;
+        font-size: 20px;
+        color: white;
+        @media @smallComputers{
+            padding-right: 20em;
+        }
+        @media @tablet {
+         padding-right: 23em;
+        }
+        @media @phone{
+            padding-right: 30rem;
+            font-size: 15px;
+        }
+          
+    }
+}//ends joinSignIn
 
 
 .choose{
@@ -6,30 +49,52 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 4px dotted @accent-color;
+    // border: 4px solid @accent-color;
     padding:4%; 
     padding-top: 8em; 
-    background-color: @background-color;    
+    background-color: @background-color;
+    
+    // background-color: @background-color;  
+    .logo{
+        padding-bottom: 2em;
+        padding-right: 2.5em;
+    }  
     
     h1{
-      padding-bottom: 1em;
+      padding-bottom: .7em;
       color:white;
-      
+      font-size: 8rem;
+      @media @smallComputers{
+        font-size: 7rem;
+    }
+    @media @tablet {
+     font-size: 5rem;
+    }
+    @media @phone{
+        font-size: 4rem;
+    }
 
+    }
+
+    h2{
+        color: white;
+        font-size: 4rem;
+      
     }
     .choices{
         display: flex;
         justify-content: space-between;
-        align-items: space-between;
-    }//ends choices
+ 
+    
     .needassist{
         display: flexbox;
         justify-content: space-between;
-       padding:4%;
-        width:80%;
+       padding:6%;
+        width:45%;
         color: whitesmoke;
         border: 1px solid whitesmoke;
         border-radius: 20%;
+       
 
       
     }//ends need assist
@@ -37,14 +102,14 @@
         display: flexbox;
         align-items: center;
        padding:4%;
-        width:80%;
+        width:45%;
         color: whitesmoke;
         border: 1px solid whitesmoke;
         border-radius: 20%;
         
 
     }//ends assist
-
+}//ends choices
     button{
         .custBtn();
     }

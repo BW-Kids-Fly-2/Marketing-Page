@@ -1,10 +1,12 @@
 .navbar{
     top:0;
-    min-width: 100%; 
-    position: fixed;
-    // overflow: hidden;
+    min-width: 82%; 
+    position: sticky;
+    overflow: hidden;
+   
     nav{
-      display: inline; 
+      display: flex;
+      justify-content: space-around;
         background-color: @background-color;
     
 
@@ -12,39 +14,27 @@
         a{
    
         text-decoration: none;
-        font-size: 30px;
+        font-size: 20px;
         color:whitesmoke;
         padding-left:3%;
         padding-bottom: 1em;
-                
+                @media @phone{
+                  font-size: 18px;
+                }
         }//ends a
 
 
     
 }//ends nav
 }
-.joinSignIn{
-    display: flex;
-    justify-content: center;
-//     align-content: center;
-//    align-items: center;
-   button{
-       .custBtn();
 
-   }
-  
-    a{
-        text-decoration: none;
-        flex-wrap: nowrap;
-        font-size: 20px;
-        color:white;
-          
-    }
-}//ends joinSignIn
 
 .navbarB{
     display: flex;
     justify-content: space-around;
+    padding-top: 1em;
+    border-top: 2px dashed whitesmoke;
+    padding-bottom: 2em;
     
 
     nav{
@@ -55,6 +45,9 @@
         font-size: 30px;
         color:white;
         padding-left:1em;
+        @media @phone{
+          font-size: 12px;
+        }
         
         }//ends a
 

@@ -1,34 +1,108 @@
-body{
-   background-color: @background-color;
-    
-}
 .container{
-    background-image: url(..//images/heroImg.jpg);
+    background-image: url(../images/heroImg.jpg);   
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-}
-
-.mainSect{
-    background-color: @background-color;
-    
-   
-   h2{
-        color:white;
-        display: flex;
-        justify-content: center;
-        padding-top: 2em;
+    @media @smallComputers{
+      background-image: none;  
+      background-color:@background-color;
+    }
+    @media @tablet {
+     
+    }
+    @media @phone{
+        
     }
    
+   
 
-    .partOne{
-        display:flex;
-        justify-content: space-around;
-    }//ends partOne
 
-    .partTwo{
-        display:flex;
-        justify-content: space-around;
-    }//ends partTwo
+
+.mainSect{
+    // background-color: @background-color;
+    //  filter:blur(10px);
+    // -webkit-filter: blur(7px);
+    // z-index: -800;
+
+   
+  
+   
+
+    .howItWorks{
+        h2{
+        color:white;
+        // display: flex;
+        // justify-content: row;
+        padding-top: 1em;
+        font-size: 14rem;
+        text-align: center;
+        // background-image: url(../images/heroImg.jpg);
+        // background-size: cover;
+
+        @media @smallComputers{
+            color: @background-color;
+            font-size: 10rem;
+        }
+        @media @tablet {
+         font-size: 8rem;
+        }
+        @media @phone{
+           font-size: 4rem;
+        }
+    }//ends h2
+
+    .topHowItWorks{
+        display: flex;
+        justify-content: space-between;
+        @media @phone{
+          
+           flex-direction: column;
+        }
+        .signUpBox{
+            background-image: url(../images/signUp.jpg);
+            .boxLayouts();
+
+
+        }//ends signUpBox
+
+        .planTrip{
+            background-image: url(../images/PlanTripimg.jpg);          
+            .boxLayouts();
+
+
+        }//ends planTrip
+    }//ends topHowItWorks
+
+    .bottomHowItWorks{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        @media @phone{
+            flex-direction: column;
+        }
+        
+        .chooseAssist{
+            background-image: url(../images/searchPerson.jpg);
+            .boxLayouts();
+
+
+        }//ends chooseAssist
+
+        .relax{
+           background-image: url(../images/relax.jpg);
+           .boxLayouts();
+            
+    
+    
+            
+        }//ends relax
+
+    } //ends bottomHowItWorks
+
+
+    
 }// ends mainSect
+}// ends container
+
+}

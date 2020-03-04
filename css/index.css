@@ -1,3 +1,50 @@
+.boxLayouts {
+  width: 47%;
+  border-radius: 9%;
+  background-size: cover;
+  padding: 2%;
+}
+@media (max-width: 800px) {
+  .boxLayouts {
+    background-image: none;
+  }
+}
+@media (max-width: 500px) {
+  .boxLayouts {
+    width: 100%;
+  }
+}
+.boxLayouts h3 {
+  text-align: center;
+  font-size: 5rem;
+  color: #D82748;
+}
+@media (max-width: 1300px) {
+  .boxLayouts h3 {
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  .boxLayouts h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .boxLayouts h3 {
+    font-size: 2rem;
+  }
+}
+.boxLayouts p {
+  color: rbg(63, 57, 87);
+  background-color: rgba(145, 111, 111, 0.3);
+  border-radius: 9%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .boxLayouts p {
+    font-size: 12px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -129,7 +176,7 @@ table {
 * {
   box-sizing: border-box;
   padding: 0 8%;
-  margin: 0 20%;
+  margin: 0 30%;
 }
 html {
   font-size: 62.5%;
@@ -143,6 +190,7 @@ h3,
 h4,
 h5 {
   font-family: 'Odibee Sans', cursive;
+  font-size: 2rem;
 }
 h1 {
   font-family: 'Monoton', cursive;
@@ -169,49 +217,33 @@ img {
 }
 .navbar {
   top: 0;
-  min-width: 100%;
-  position: fixed;
+  min-width: 82%;
+  position: sticky;
+  overflow: hidden;
 }
 .navbar nav {
-  display: inline;
-  background-color: #3F3957;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(63, 57, 87, 0.8);
 }
 .navbar nav a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   color: whitesmoke;
   padding-left: 3%;
   padding-bottom: 1em;
 }
-.joinSignIn {
-  display: flex;
-  justify-content: center;
-}
-.joinSignIn button {
-  background-color: #F62E03;
-  border: none;
-  border-radius: 10%;
-  color: white;
-  padding: 5px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-.joinSignIn button:hover {
-  background-color: lightblue;
-  color: #3F3957;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.joinSignIn a {
-  text-decoration: none;
-  flex-wrap: nowrap;
-  font-size: 20px;
-  color: white;
+@media (max-width: 500px) {
+  .navbar nav a {
+    font-size: 18px;
+  }
 }
 .navbarB {
   display: flex;
   justify-content: space-around;
+  padding-top: 1em;
+  border-top: 2px dashed whitesmoke;
+  padding-bottom: 2em;
 }
 .navbarB nav a {
   text-decoration: none;
@@ -220,82 +252,476 @@ img {
   color: white;
   padding-left: 1em;
 }
-body {
-  background-color: #3F3957;
+@media (max-width: 500px) {
+  .navbarB nav a {
+    font-size: 12px;
+  }
+}
+footer {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  footer {
+    font-size: 10px;
+  }
 }
 .container {
-  background-image: url(..//images/heroImg.jpg);
+  background-image: url(../images/heroImg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.mainSect {
-  background-color: #3F3957;
+@media (max-width: 1300px) {
+  .container {
+    background-image: none;
+    background-color: rgba(63, 57, 87, 0.8);
+  }
 }
-.mainSect h2 {
+.container .mainSect .howItWorks h2 {
   color: white;
+  padding-top: 1em;
+  font-size: 14rem;
+  text-align: center;
+}
+@media (max-width: 1300px) {
+  .container .mainSect .howItWorks h2 {
+    color: rgba(63, 57, 87, 0.8);
+    font-size: 10rem;
+  }
+}
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks h2 {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks h2 {
+    font-size: 4rem;
+  }
+}
+.container .mainSect .howItWorks .topHowItWorks {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .topHowItWorks {
+    flex-direction: column;
+  }
+}
+.container .mainSect .howItWorks .topHowItWorks .signUpBox {
+  background-image: url(../images/signUp.jpg);
+  width: 47%;
+  border-radius: 9%;
+  background-size: cover;
+  padding: 2%;
+}
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks .topHowItWorks .signUpBox {
+    background-image: none;
+  }
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .topHowItWorks .signUpBox {
+    width: 100%;
+  }
+}
+.container .mainSect .howItWorks .topHowItWorks .signUpBox h3 {
+  text-align: center;
+  font-size: 5rem;
+  color: #D82748;
+}
+@media (max-width: 1300px) {
+  .container .mainSect .howItWorks .topHowItWorks .signUpBox h3 {
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks .topHowItWorks .signUpBox h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .topHowItWorks .signUpBox h3 {
+    font-size: 2rem;
+  }
+}
+.container .mainSect .howItWorks .topHowItWorks .signUpBox p {
+  color: rbg(63, 57, 87);
+  background-color: rgba(145, 111, 111, 0.3);
+  border-radius: 9%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .topHowItWorks .signUpBox p {
+    font-size: 12px;
+  }
+}
+.container .mainSect .howItWorks .topHowItWorks .planTrip {
+  background-image: url(../images/PlanTripimg.jpg);
+  width: 47%;
+  border-radius: 9%;
+  background-size: cover;
+  padding: 2%;
+}
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks .topHowItWorks .planTrip {
+    background-image: none;
+  }
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .topHowItWorks .planTrip {
+    width: 100%;
+  }
+}
+.container .mainSect .howItWorks .topHowItWorks .planTrip h3 {
+  text-align: center;
+  font-size: 5rem;
+  color: #D82748;
+}
+@media (max-width: 1300px) {
+  .container .mainSect .howItWorks .topHowItWorks .planTrip h3 {
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks .topHowItWorks .planTrip h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .topHowItWorks .planTrip h3 {
+    font-size: 2rem;
+  }
+}
+.container .mainSect .howItWorks .topHowItWorks .planTrip p {
+  color: rbg(63, 57, 87);
+  background-color: rgba(145, 111, 111, 0.3);
+  border-radius: 9%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .topHowItWorks .planTrip p {
+    font-size: 12px;
+  }
+}
+.container .mainSect .howItWorks .bottomHowItWorks {
+  display: flex;
+  justify-content: space-between;
   padding-top: 2em;
+  padding-bottom: 2em;
 }
-.mainSect .partOne {
-  display: flex;
-  justify-content: space-around;
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .bottomHowItWorks {
+    flex-direction: column;
+  }
 }
-.mainSect .partTwo {
-  display: flex;
-  justify-content: space-around;
+.container .mainSect .howItWorks .bottomHowItWorks .chooseAssist {
+  background-image: url(../images/searchPerson.jpg);
+  width: 47%;
+  border-radius: 9%;
+  background-size: cover;
+  padding: 2%;
 }
-.choose {
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .chooseAssist {
+    background-image: none;
+  }
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .chooseAssist {
+    width: 100%;
+  }
+}
+.container .mainSect .howItWorks .bottomHowItWorks .chooseAssist h3 {
+  text-align: center;
+  font-size: 5rem;
+  color: #D82748;
+}
+@media (max-width: 1300px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .chooseAssist h3 {
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .chooseAssist h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .chooseAssist h3 {
+    font-size: 2rem;
+  }
+}
+.container .mainSect .howItWorks .bottomHowItWorks .chooseAssist p {
+  color: rbg(63, 57, 87);
+  background-color: rgba(145, 111, 111, 0.3);
+  border-radius: 9%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .chooseAssist p {
+    font-size: 12px;
+  }
+}
+.container .mainSect .howItWorks .bottomHowItWorks .relax {
+  background-image: url(../images/relax.jpg);
+  width: 47%;
+  border-radius: 9%;
+  background-size: cover;
+  padding: 2%;
+}
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .relax {
+    background-image: none;
+  }
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .relax {
+    width: 100%;
+  }
+}
+.container .mainSect .howItWorks .bottomHowItWorks .relax h3 {
+  text-align: center;
+  font-size: 5rem;
+  color: #D82748;
+}
+@media (max-width: 1300px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .relax h3 {
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .relax h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .relax h3 {
+    font-size: 2rem;
+  }
+}
+.container .mainSect .howItWorks .bottomHowItWorks .relax p {
+  color: rbg(63, 57, 87);
+  background-color: rgba(145, 111, 111, 0.3);
+  border-radius: 9%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .relax p {
+    font-size: 12px;
+  }
+}
+.joinSignIn {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-content: center;
   align-items: center;
-  border: 4px dotted #F62E03;
-  padding: 4%;
-  padding-top: 8em;
-  background-color: #3F3957;
+  padding-left: 45em;
 }
-.choose h1 {
-  padding-bottom: 1em;
-  color: white;
+@media (max-width: 1300px) {
+  .joinSignIn {
+    padding-right: 20em;
+    padding-bottom: 2em;
+  }
 }
-.choose .choices {
-  display: flex;
-  justify-content: space-between;
-  align-items: space-between;
+@media (max-width: 800px) {
+  .joinSignIn {
+    padding-right: 23em;
+  }
 }
-.choose .needassist {
-  display: flexbox;
-  justify-content: space-between;
-  padding: 4%;
-  width: 80%;
-  color: whitesmoke;
-  border: 1px solid whitesmoke;
-  border-radius: 20%;
+@media (max-width: 500px) {
+  .joinSignIn {
+    padding-right: 30rem;
+  }
 }
-.choose .assist {
-  display: flexbox;
-  align-items: center;
-  padding: 4%;
-  width: 80%;
-  color: whitesmoke;
-  border: 1px solid whitesmoke;
-  border-radius: 20%;
-}
-.choose button {
-  background-color: #F62E03;
+.joinSignIn button {
+  background-color: #D82748;
   border: none;
   border-radius: 10%;
   color: white;
   padding: 5px 15px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  font-size: 16px;
+}
+.joinSignIn button:hover {
+  background-color: lightblue;
+  color: rgba(63, 57, 87, 0.8);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.joinSignIn a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+@media (max-width: 1300px) {
+  .joinSignIn a {
+    padding-right: 20em;
+  }
+}
+@media (max-width: 800px) {
+  .joinSignIn a {
+    padding-right: 23em;
+  }
+}
+@media (max-width: 500px) {
+  .joinSignIn a {
+    padding-right: 30rem;
+    font-size: 15px;
+  }
+}
+.choose {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+  padding-top: 8em;
+  background-color: rgba(63, 57, 87, 0.8);
+}
+.choose .logo {
+  padding-bottom: 2em;
+  padding-right: 2.5em;
+}
+.choose h1 {
+  padding-bottom: 0.7em;
+  color: white;
+  font-size: 8rem;
+}
+@media (max-width: 1300px) {
+  .choose h1 {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 800px) {
+  .choose h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .choose h1 {
+    font-size: 4rem;
+  }
+}
+.choose h2 {
+  color: white;
+  font-size: 4rem;
+}
+.choose .choices {
+  display: flex;
+  justify-content: space-between;
+}
+.choose .choices .needassist {
+  display: flexbox;
+  justify-content: space-between;
+  padding: 6%;
+  width: 45%;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 20%;
+}
+.choose .choices .assist {
+  display: flexbox;
+  align-items: center;
+  padding: 4%;
+  width: 45%;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 20%;
+}
+.choose button {
+  background-color: #D82748;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
   font-size: 16px;
 }
 .choose button:hover {
   background-color: lightblue;
-  color: #3F3957;
+  color: rgba(63, 57, 87, 0.8);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.joinSignInAbout {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-left: 45em;
+}
+@media (max-width: 1300px) {
+  .joinSignInAbout {
+    padding-left: 38em;
+  }
+}
+@media (max-width: 800px) {
+  .joinSignInAbout {
+    padding-left: 28em;
+  }
+}
+@media (max-width: 500px) {
+  .joinSignInAbout {
+    padding-left: 20em;
+  }
+}
+.joinSignInAbout button {
+  background-color: #D82748;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 8px;
+}
+.joinSignInAbout button:hover {
+  background-color: lightblue;
+  color: rgba(63, 57, 87, 0.8);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 500px) {
+  .joinSignInAbout button {
+    margin-right: 20px;
+  }
+}
+.joinSignInAbout a {
+  text-decoration: none;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  color: #D82748;
+}
+@media (max-width: 500px) {
+  .joinSignInAbout a {
+    font-size: 18px;
+  }
+}
+.aboutInfo {
+  background-color: rgba(63, 57, 87, 0.8);
+  text-align: center;
+}
+.aboutInfo h1,
+.aboutInfo h2 {
+  color: whitesmoke;
+}
+.aboutInfo p {
+  color: whitesmoke;
+}
+@media (max-width: 800px) {
+  .aboutInfo h1 {
+    font-size: 2rem;
+  }
+  .aboutInfo p {
+    font-size: 15px;
+  }
+}
+.contactUs {
+  background-color: rgba(127, 117, 161, 0.5);
+  text-align: center;
+}
+.contactUs a {
+  text-decoration: none;
+  color: #1f183d;
 }
