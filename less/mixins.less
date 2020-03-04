@@ -23,3 +23,53 @@
     }
 }
 
+.boxLayouts{
+    width:47%;
+    
+  
+    border-radius: 9%;
+    background-size: cover;
+    padding:2%;
+    @media @smallComputers{
+        
+    }
+    @media @tablet {
+     background-image: none;
+    }
+    @media @phone{
+        width: 100%;
+    }
+
+    h3{
+        text-align: center;
+        font-size: 5rem;
+        color: @accent-color;
+        @media @smallComputers{
+            color: white;
+            
+        }
+        @media @tablet {
+         font-size: 3rem;
+        }
+        @media @phone{
+           font-size: 2rem; 
+        }
+        
+    }
+    p{
+        color: rbg(63, 57, 87);
+        background-color: rgba(145, 111, 111, 0.3);
+        border-radius: 9%;
+        padding:2%;
+        @media @smallComputers{
+                
+        }
+        @media @tablet {
+         
+        }
+        @media @phone{
+         font-size: 12px;   
+        }
+      
+    }
+}

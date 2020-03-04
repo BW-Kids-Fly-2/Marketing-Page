@@ -1,3 +1,50 @@
+.boxLayouts {
+  width: 47%;
+  border-radius: 9%;
+  background-size: cover;
+  padding: 2%;
+}
+@media (max-width: 800px) {
+  .boxLayouts {
+    background-image: none;
+  }
+}
+@media (max-width: 500px) {
+  .boxLayouts {
+    width: 100%;
+  }
+}
+.boxLayouts h3 {
+  text-align: center;
+  font-size: 5rem;
+  color: #D82748;
+}
+@media (max-width: 1300px) {
+  .boxLayouts h3 {
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  .boxLayouts h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .boxLayouts h3 {
+    font-size: 2rem;
+  }
+}
+.boxLayouts p {
+  color: rbg(63, 57, 87);
+  background-color: rgba(145, 111, 111, 0.3);
+  border-radius: 9%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .boxLayouts p {
+    font-size: 12px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -186,6 +233,11 @@ img {
   padding-left: 3%;
   padding-bottom: 1em;
 }
+@media (max-width: 500px) {
+  .navbar nav a {
+    font-size: 18px;
+  }
+}
 .navbarB {
   display: flex;
   justify-content: space-around;
@@ -200,8 +252,18 @@ img {
   color: white;
   padding-left: 1em;
 }
+@media (max-width: 500px) {
+  .navbarB nav a {
+    font-size: 12px;
+  }
+}
 footer {
   text-align: center;
+}
+@media (max-width: 500px) {
+  footer {
+    font-size: 10px;
+  }
 }
 .container {
   background-image: url(../images/heroImg.jpg);
@@ -241,16 +303,26 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .topHowItWorks {
+    flex-direction: column;
+  }
+}
 .container .mainSect .howItWorks .topHowItWorks .signUpBox {
-  width: 47%;
   background-image: url(../images/signUp.jpg);
+  width: 47%;
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
 }
-@media (max-width: 1300px) {
+@media (max-width: 800px) {
   .container .mainSect .howItWorks .topHowItWorks .signUpBox {
     background-image: none;
+  }
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .topHowItWorks .signUpBox {
+    width: 100%;
   }
 }
 .container .mainSect .howItWorks .topHowItWorks .signUpBox h3 {
@@ -268,126 +340,176 @@ footer {
     font-size: 3rem;
   }
 }
-.container .mainSect .howItWorks .topHowItWorks p {
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .topHowItWorks .signUpBox h3 {
+    font-size: 2rem;
+  }
+}
+.container .mainSect .howItWorks .topHowItWorks .signUpBox p {
   color: rbg(63, 57, 87);
   background-color: rgba(145, 111, 111, 0.3);
   border-radius: 9%;
   padding: 2%;
 }
-.container .mainSect .howItWorks .planTrip {
-  width: 47%;
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .topHowItWorks .signUpBox p {
+    font-size: 12px;
+  }
+}
+.container .mainSect .howItWorks .topHowItWorks .planTrip {
   background-image: url(../images/PlanTripimg.jpg);
+  width: 47%;
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
 }
-@media (max-width: 1300px) {
-  .container .mainSect .howItWorks .planTrip {
-    background-image: none;
-  }
-}
 @media (max-width: 800px) {
-  .container .mainSect .howItWorks .planTrip {
+  .container .mainSect .howItWorks .topHowItWorks .planTrip {
     background-image: none;
   }
 }
 @media (max-width: 500px) {
-  .container .mainSect .howItWorks .planTrip {
-    background-image: none;
+  .container .mainSect .howItWorks .topHowItWorks .planTrip {
+    width: 100%;
   }
 }
-.container .mainSect .howItWorks .planTrip h3 {
+.container .mainSect .howItWorks .topHowItWorks .planTrip h3 {
   text-align: center;
   font-size: 5rem;
   color: #D82748;
 }
 @media (max-width: 1300px) {
-  .container .mainSect .howItWorks .planTrip h3 {
+  .container .mainSect .howItWorks .topHowItWorks .planTrip h3 {
     color: white;
   }
 }
 @media (max-width: 800px) {
-  .container .mainSect .howItWorks .planTrip h3 {
+  .container .mainSect .howItWorks .topHowItWorks .planTrip h3 {
     font-size: 3rem;
   }
 }
-.container .mainSect .howItWorks .planTrip p {
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .topHowItWorks .planTrip h3 {
+    font-size: 2rem;
+  }
+}
+.container .mainSect .howItWorks .topHowItWorks .planTrip p {
   color: rbg(63, 57, 87);
   background-color: rgba(145, 111, 111, 0.3);
   border-radius: 9%;
   padding: 2%;
 }
-.container .mainSect .bottomHowItWorks {
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .topHowItWorks .planTrip p {
+    font-size: 12px;
+  }
+}
+.container .mainSect .howItWorks .bottomHowItWorks {
   display: flex;
   justify-content: space-between;
   padding-top: 2em;
   padding-bottom: 2em;
 }
-.container .mainSect .bottomHowItWorks .chooseAssist {
-  width: 47%;
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .bottomHowItWorks {
+    flex-direction: column;
+  }
+}
+.container .mainSect .howItWorks .bottomHowItWorks .chooseAssist {
   background-image: url(../images/searchPerson.jpg);
-  border-radius: 9%;
-  background-size: cover;
-  padding: 2%;
-}
-@media (max-width: 1300px) {
-  .container .mainSect .bottomHowItWorks .chooseAssist {
-    background-image: none;
-  }
-}
-.container .mainSect .bottomHowItWorks .chooseAssist h3 {
-  text-align: center;
-  font-size: 5rem;
-  color: #D82748;
-}
-@media (max-width: 1300px) {
-  .container .mainSect .bottomHowItWorks .chooseAssist h3 {
-    color: white;
-  }
-}
-@media (max-width: 800px) {
-  .container .mainSect .bottomHowItWorks .chooseAssist h3 {
-    font-size: 3rem;
-  }
-}
-.container .mainSect .bottomHowItWorks .chooseAssist p {
-  color: rbg(63, 57, 87);
-  background-color: rgba(145, 111, 111, 0.3);
-  border-radius: 9%;
-  padding: 2%;
-}
-.container .mainSect .bottomHowItWorks .relax {
   width: 47%;
-  background-image: url(../images/relax.jpg);
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
 }
-@media (max-width: 1300px) {
-  .container .mainSect .bottomHowItWorks .relax {
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .chooseAssist {
     background-image: none;
   }
 }
-.container .mainSect .bottomHowItWorks .relax h3 {
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .chooseAssist {
+    width: 100%;
+  }
+}
+.container .mainSect .howItWorks .bottomHowItWorks .chooseAssist h3 {
   text-align: center;
   font-size: 5rem;
   color: #D82748;
 }
 @media (max-width: 1300px) {
-  .container .mainSect .bottomHowItWorks .relax h3 {
+  .container .mainSect .howItWorks .bottomHowItWorks .chooseAssist h3 {
     color: white;
   }
 }
 @media (max-width: 800px) {
-  .container .mainSect .bottomHowItWorks .relax h3 {
+  .container .mainSect .howItWorks .bottomHowItWorks .chooseAssist h3 {
     font-size: 3rem;
   }
 }
-.container .mainSect .bottomHowItWorks .relax p {
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .chooseAssist h3 {
+    font-size: 2rem;
+  }
+}
+.container .mainSect .howItWorks .bottomHowItWorks .chooseAssist p {
   color: rbg(63, 57, 87);
   background-color: rgba(145, 111, 111, 0.3);
   border-radius: 9%;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .chooseAssist p {
+    font-size: 12px;
+  }
+}
+.container .mainSect .howItWorks .bottomHowItWorks .relax {
+  background-image: url(../images/relax.jpg);
+  width: 47%;
+  border-radius: 9%;
+  background-size: cover;
+  padding: 2%;
+}
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .relax {
+    background-image: none;
+  }
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .relax {
+    width: 100%;
+  }
+}
+.container .mainSect .howItWorks .bottomHowItWorks .relax h3 {
+  text-align: center;
+  font-size: 5rem;
+  color: #D82748;
+}
+@media (max-width: 1300px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .relax h3 {
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .relax h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .relax h3 {
+    font-size: 2rem;
+  }
+}
+.container .mainSect .howItWorks .bottomHowItWorks .relax p {
+  color: rbg(63, 57, 87);
+  background-color: rgba(145, 111, 111, 0.3);
+  border-radius: 9%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks .bottomHowItWorks .relax p {
+    font-size: 12px;
+  }
 }
 .joinSignIn {
   display: flex;

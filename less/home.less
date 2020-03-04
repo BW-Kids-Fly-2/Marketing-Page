@@ -50,94 +50,24 @@
            font-size: 4rem;
         }
     }//ends h2
+
     .topHowItWorks{
         display: flex;
         justify-content: space-between;
+        @media @phone{
+          
+           flex-direction: column;
+        }
         .signUpBox{
-            width:47%;
             background-image: url(../images/signUp.jpg);
-            border-radius: 9%;
-            background-size: cover;
-            padding:2%;
-            
-            @media @smallComputers{
-                background-image: none;
-            }
-            @media @tablet {
-             
-            }
-            @media @phone{
-                
-            }
-
-            h3{
-                text-align: center;
-                font-size: 5rem;
-                color: @accent-color;
-                @media @smallComputers{
-                    color: white;
-                }
-                @media @tablet {
-                 font-size: 3rem;
-                }
-                @media @phone{
-                    
-                }
-                    
-                }
-            }
-            p{
-                color: rbg(63, 57, 87);
-                background-color: rgba(145, 111, 111, 0.3);
-                border-radius: 9%;
-                padding:2%;
-            }
-        
+            .boxLayouts();
 
 
         }//ends signUpBox
 
         .planTrip{
-            width:47%;
-            background-image: url(../images/PlanTripimg.jpg);
-          
-            border-radius: 9%;
-            background-size: cover;
-            padding:2%;
-
-            @media @smallComputers{
-           background-image: none;
-            }
-            @media @tablet {
-             background-image: none;
-            }
-            @media @phone{
-               background-image: none; 
-            }
-
-            h3{
-                text-align: center;
-                font-size: 5rem;
-                color: @accent-color;
-                @media @smallComputers{
-                    color: white;
-                    
-                }
-                @media @tablet {
-                 font-size: 3rem;
-                }
-                @media @phone{
-                    
-                }
-                
-            }
-            p{
-                color: rbg(63, 57, 87);
-                background-color: rgba(145, 111, 111, 0.3);
-                border-radius: 9%;
-                padding:2%;
-              
-            }
+            background-image: url(../images/PlanTripimg.jpg);          
+            .boxLayouts();
 
 
         }//ends planTrip
@@ -148,101 +78,20 @@
         justify-content: space-between;
         padding-top: 2em;
         padding-bottom: 2em;
+        @media @phone{
+            flex-direction: column;
+        }
         
         .chooseAssist{
-            width:47%;
             background-image: url(../images/searchPerson.jpg);
-          
-            border-radius: 9%;
-            background-size: cover;
-            padding:2%;
-            @media @smallComputers{
-                background-image: none;
-            }
-            @media @tablet {
-             
-            }
-            @media @phone{
-                
-            }
-
-            h3{
-                text-align: center;
-                font-size: 5rem;
-                color: @accent-color;
-                @media @smallComputers{
-                    color: white;
-                    
-                }
-                @media @tablet {
-                 font-size: 3rem;
-                }
-                @media @phone{
-                    
-                }
-                
-            }
-            p{
-                color: rbg(63, 57, 87);
-                background-color: rgba(145, 111, 111, 0.3);
-                border-radius: 9%;
-                padding:2%;
-              
-            }
+            .boxLayouts();
 
 
         }//ends chooseAssist
 
         .relax{
-           
-                width:47%;
-                background-image: url(../images/relax.jpg);
-              
-                border-radius: 9%;
-                background-size: cover;
-                padding:2%;
-                @media @smallComputers{
-                    background-image: none;
-                }
-                @media @tablet {
-                 
-                }
-                @media @phone{
-                    
-                }
-    
-                h3{
-                    text-align: center;
-                    font-size: 5rem;
-                    color: @accent-color;
-                    @media @smallComputers{
-                        color: white;
-                        
-                    }
-                    @media @tablet {
-                     font-size: 3rem;
-                    }
-                    @media @phone{
-                        
-                    }
-                    
-                }
-                p{
-                    color: rbg(63, 57, 87);
-                    background-color: rgba(145, 111, 111, 0.3);
-                    border-radius: 9%;
-                    padding:2%;
-                    @media @smallComputers{
-                        
-                    }
-                    @media @tablet {
-                     
-                    }
-                    @media @phone{
-                        
-                    }
-                }
-                
+           background-image: url(../images/relax.jpg);
+           .boxLayouts();
             
     
     
@@ -256,3 +105,4 @@
 }// ends mainSect
 }// ends container
 
+}
