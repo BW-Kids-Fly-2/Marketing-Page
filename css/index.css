@@ -227,6 +227,16 @@ footer {
     font-size: 10rem;
   }
 }
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks h2 {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .mainSect .howItWorks h2 {
+    font-size: 4rem;
+  }
+}
 .container .mainSect .howItWorks .topHowItWorks {
   display: flex;
   justify-content: space-between;
@@ -247,6 +257,16 @@ footer {
   text-align: center;
   font-size: 5rem;
   color: #D82748;
+}
+@media (max-width: 1300px) {
+  .container .mainSect .howItWorks .topHowItWorks .signUpBox h3 {
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks .topHowItWorks .signUpBox h3 {
+    font-size: 3rem;
+  }
 }
 .container .mainSect .howItWorks .topHowItWorks p {
   color: rbg(63, 57, 87);
@@ -281,6 +301,16 @@ footer {
   font-size: 5rem;
   color: #D82748;
 }
+@media (max-width: 1300px) {
+  .container .mainSect .howItWorks .planTrip h3 {
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  .container .mainSect .howItWorks .planTrip h3 {
+    font-size: 3rem;
+  }
+}
 .container .mainSect .howItWorks .planTrip p {
   color: rbg(63, 57, 87);
   background-color: rgba(145, 111, 111, 0.3);
@@ -310,6 +340,16 @@ footer {
   font-size: 5rem;
   color: #D82748;
 }
+@media (max-width: 1300px) {
+  .container .mainSect .bottomHowItWorks .chooseAssist h3 {
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  .container .mainSect .bottomHowItWorks .chooseAssist h3 {
+    font-size: 3rem;
+  }
+}
 .container .mainSect .bottomHowItWorks .chooseAssist p {
   color: rbg(63, 57, 87);
   background-color: rgba(145, 111, 111, 0.3);
@@ -332,6 +372,16 @@ footer {
   text-align: center;
   font-size: 5rem;
   color: #D82748;
+}
+@media (max-width: 1300px) {
+  .container .mainSect .bottomHowItWorks .relax h3 {
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  .container .mainSect .bottomHowItWorks .relax h3 {
+    font-size: 3rem;
+  }
 }
 .container .mainSect .bottomHowItWorks .relax p {
   color: rbg(63, 57, 87);
