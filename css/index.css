@@ -1,5 +1,5 @@
 .boxLayouts {
-  width: 60%;
+  width: 47%;
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
@@ -314,7 +314,7 @@ footer {
 }
 .container .mainSect .howItWorks .topHowItWorks .signUpBox {
   background-image: url(../images/signUp.jpg);
-  width: 60%;
+  width: 47%;
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
@@ -362,7 +362,7 @@ footer {
 }
 .container .mainSect .howItWorks .topHowItWorks .planTrip {
   background-image: url(../images/PlanTripimg.jpg);
-  width: 60%;
+  width: 47%;
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
@@ -421,7 +421,7 @@ footer {
 }
 .container .mainSect .howItWorks .bottomHowItWorks .chooseAssist {
   background-image: url(../images/searchPerson.jpg);
-  width: 60%;
+  width: 47%;
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
@@ -469,7 +469,7 @@ footer {
 }
 .container .mainSect .howItWorks .bottomHowItWorks .relax {
   background-image: url(../images/relax.jpg);
-  width: 60%;
+  width: 47%;
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
