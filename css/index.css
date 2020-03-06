@@ -1,5 +1,5 @@
 .boxLayouts {
-  width: 47%;
+  width: 60%;
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
@@ -310,7 +310,7 @@ footer {
 }
 .container .mainSect .howItWorks .topHowItWorks .signUpBox {
   background-image: url(../images/signUp.jpg);
-  width: 47%;
+  width: 60%;
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
@@ -358,7 +358,7 @@ footer {
 }
 .container .mainSect .howItWorks .topHowItWorks .planTrip {
   background-image: url(../images/PlanTripimg.jpg);
-  width: 47%;
+  width: 60%;
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
@@ -417,7 +417,7 @@ footer {
 }
 .container .mainSect .howItWorks .bottomHowItWorks .chooseAssist {
   background-image: url(../images/searchPerson.jpg);
-  width: 47%;
+  width: 60%;
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
@@ -465,7 +465,7 @@ footer {
 }
 .container .mainSect .howItWorks .bottomHowItWorks .relax {
   background-image: url(../images/relax.jpg);
-  width: 47%;
+  width: 60%;
   border-radius: 9%;
   background-size: cover;
   padding: 2%;
@@ -615,19 +615,36 @@ footer {
   justify-content: space-between;
 }
 .choose .choices .needassist {
-  display: flexbox;
   justify-content: space-between;
   padding: 6%;
+  text-align: center;
   width: 45%;
   color: whitesmoke;
   border: 1px solid whitesmoke;
   border-radius: 20%;
+}
+.choose .choices .needassist button {
+  background-color: #D82748;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 1em;
+}
+.choose .choices .needassist button:hover {
+  background-color: lightblue;
+  color: rgba(63, 57, 87, 0.8);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .choose .choices .assist {
   display: flexbox;
   align-items: center;
   padding: 4%;
   width: 45%;
+  text-align: center;
   color: whitesmoke;
   border: 1px solid whitesmoke;
   border-radius: 20%;
@@ -641,6 +658,7 @@ footer {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
+  padding-left: 1em;
 }
 .choose button:hover {
   background-color: lightblue;
