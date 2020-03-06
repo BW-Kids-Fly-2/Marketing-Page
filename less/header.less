@@ -21,7 +21,7 @@
 
    button{
        .custBtn();
-       padding-right: 1em;
+       padding-right: 10em;
    
 
    }
@@ -31,6 +31,7 @@
         // flex-wrap: nowrap;
         font-size: 20px;
         color: white;
+        margin-left: 2em;
         @media @smallComputers{
             padding-right: 20em;
         }
@@ -60,7 +61,7 @@
     .logo{
         padding-bottom: 2em;
         padding-right: 2.5em;
-    }  
+    } //ends logo 
     
     h1{
       padding-bottom: .7em;
@@ -76,35 +77,41 @@
         font-size: 4rem;
     }
 
-    }
+    }//end of h1
 
     h2{
         color: white;
         font-size: 4rem;
       
-    }
+    }//end of h2
     .choices{
         display: flex;
         justify-content: space-between;
  
     
     .needassist{
-        display: flexbox;
+        // display: flexbox;
         justify-content: space-between;
        padding:6%;
+       text-align: center;
         width:45%;
         color: whitesmoke;
         border: 1px solid whitesmoke;
         border-radius: 20%;
-       
 
-      
+        button{
+            .custBtn();
+            margin-left: 1em;   
+           
+        }// ends need assist button        
+     
     }//ends need assist
     .assist{
         display: flexbox;
         align-items: center;
        padding:4%;
         width:45%;
+        text-align: center;
         color: whitesmoke;
         border: 1px solid whitesmoke;
         border-radius: 20%;
@@ -114,6 +121,8 @@
 }//ends choices
     button{
         .custBtn();
+        padding-left: 1em;
+     
     }
    
 }//ends choose
