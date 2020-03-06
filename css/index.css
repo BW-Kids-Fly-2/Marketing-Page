@@ -267,6 +267,7 @@ footer {
 }
 .container {
   background-image: url(../images/heroImg.jpg);
+  background-color: rgba(63, 57, 87, 0.8);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
