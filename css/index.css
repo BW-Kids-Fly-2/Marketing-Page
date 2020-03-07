@@ -285,7 +285,7 @@ footer {
   padding-top: 0.4em;
   font-size: 14rem;
   text-align: center;
-  padding-left: 0.5em;
+  padding-left: 0.7em;
 }
 @media (max-width: 1300px) {
   .container .mainSect .howItWorks h2 {
